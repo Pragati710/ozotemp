@@ -225,7 +225,7 @@ section
 {
 	display: block;
 	position: fixed;
-	top: 47px;
+	top: 20px;
 	width: 100%;
 	z-index: 100;
 	-webkit-transition: all 400ms ease;
@@ -241,7 +241,7 @@ section
 .header_container
 {
 	width: 100%;
-	height:100px;
+	height:65px;
 	background: #131a2f;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
@@ -251,7 +251,7 @@ section
 }
 .header.scrolled .header_container
 {
-	height:80px;
+	height:65px;
 }
 
 /*********************************
@@ -341,10 +341,10 @@ section
 {
 	display: block;
 	position: absolute;
-	bottom: 10px;
+	bottom: 28px;
 	left: 0;
 	width: 100%;
-	height: 3px;
+	height:3px;
 	background: #00a9d6;
 	content: '';
 }
@@ -365,7 +365,7 @@ section
 }
 .header.scrolled .main_nav_item a
 {
-	line-height: 90px;
+	line-height: 118px;
 }
 .main_nav_item.active a
 {
@@ -398,10 +398,10 @@ section
 .icon-bar a {
     display: block; /* Make the links appear below each other instead of side-by-side */
     text-align: center; /* Center-align text */
-    padding: 16px; /* Add some padding */
+    padding: 13px; /* Add some padding */
     transition: all 0.3s ease; /* Add transition for hover effects */
     color: white; /* White text color */
-    font-size: 36px; /* Increased font-size */
+    font-size: 32px; /* Increased font-size */
 }
 
 .icon-bar.active
