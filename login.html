@@ -6,6 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css'>
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel='stylesheet' href='vendor/font-awesome/css/font-awesome.min.css'>
 <style>
@@ -28,45 +29,46 @@ h2 {
 </style>
 </head>
 <body>
-<div class="login_container">
-  <div class="container__child login">
-    <div class="login__content text-center">
-      <h1 class="heading--primary">Welcome to Ozo Trips</h1>
-      <h2 class="heading--secondary">Are you ready to join us?</h2>
+  <div class="container" style="top: 20%;  position: absolute; right: 0;left: 0;margin-right: auto; margin-left: auto;">
+    <div class="col-md-10 " style="margin: auto;float:none">
+      <div class="col-md-6 login">
+        <div class="login__content text-center">
+          <h1 class="heading--primary">Welcome to Ozo Trips</h1>
+          <h2 class="heading--secondary">Are you ready to join us?</h2>
+        </div>
+        <div class="login__links">
+          <ul class="list-inline m-b-0 text-center">
+            <li><a href="#" target="_blank"><i class="fa fa-globe"></i></a></li>
+            <li><a href="#" target="_blank"><fa class="fa fa-behance"></fa></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <div class="login__overlay"></div>
+      </div>
+      <div class="col-md-6 login__form">
+        <form action="#">
+         <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="text" name="email" id="email" placeholder="ozotrips@gmail.com" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" type="password" name="password" id="password" placeholder="********" required />
+          </div>
+          
+          <div class="m-t-lg">
+            <ul class="list-inline">
+              <li>
+                <input class="btn btn--form" type="submit" value="Login" />
+              </li>
+              <li>
+                <a class="signup__link" href="signup.html">Not a member yet?</a>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="login__links">
-      <ul class="list-inline m-b-0 text-center">
-        <li><a href="#" target="_blank"><i class="fa fa-globe"></i></a></li>
-        <li><a href="#" target="_blank"><fa class="fa fa-behance"></fa></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      </ul>
-    </div>
-    <div class="login__overlay"></div>
-  </div>
-  <div class="container__child login__form">
-    <form action="#">
-     <div class="form-group">
-        <label for="email">Email</label>
-        <input class="form-control" type="text" name="email" id="email" placeholder="ozotrips@gmail.com" required />
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input class="form-control" type="password" name="password" id="password" placeholder="********" required />
-      </div>
-      
-      <div class="m-t-lg">
-        <ul class="list-inline">
-          <li>
-            <input class="btn btn--form" type="submit" value="Login" />
-          </li>
-          <li>
-            <a class="signup__link" href="signup.html">Not a member yet?</a>
-          </li>
-        </ul>
-      </div>
-    </form>  
-  </div>
-</div>
-
+  </div> 
 </body></html>
