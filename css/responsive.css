@@ -63,19 +63,7 @@
 
 @media only screen and (max-width: 1199px)
 {
-	.last_item_content
-	{
-		padding-left: 80px;
-		padding-right: 70px;
-	}
-	.last_percent
-	{
-		font-size: 124px;
-	}
-	.last_title
-	{
-		font-size: 30px;
-	}
+	
 }
 
 /************
@@ -135,25 +123,7 @@
 	{
 		font-size: 42px;
 	}
-	.find_item:first-child
-	{
-		width: calc((100% - 8px) / 2);
-		margin-bottom: 30px;
-	}
-	.find_item:nth-child(2)
-	{
-		width: calc((100% - 8px) / 2);
-		margin-bottom: 30px;
-	}
-	.find_item:nth-child(3),
-	.find_item:nth-child(4)
-	{
-		width: calc((100% - 154px) / 2);
-	}
-	.find_button
-	{
-		width: 138px;
-	}
+	
 	.top_col
 	{
 		margin-bottom: 30px;
@@ -166,68 +136,12 @@
 	{
 		margin-bottom: 0px;
 	}
-	.last_item_content
-	{
-		padding-left: 90px;
-		padding-right: 80px;
-	}
-	.last_item
-	{
-		padding-right: 0;
-		margin-bottom: 35px;
-	}
-	.last_col:last-child .last_item
-	{
-		padding-left: 0;
-		margin-bottom: 0px;
-	}
-	.last_subtitle
-	{
-		text-align: center;
-	}
-	.last_percent
-	{
-		text-align: center;
-	}
-	.last_title
-	{
-		text-align: center;
-	}
-	.popular_item
-	{
-		width: calc((100% - 30px) / 2);
-		margin-bottom: 26px;
-	}
-	.popular_item:nth-last-child(-n+4)
-	{
-		margin-bottom: 26px;
-	}
-	.popular_item:nth-last-child(-n+2)
-	{
-		margin-bottom: 0;
-	}
-	.special_content
-	{
-		width: 690px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.special_slider_nav
-	{
-		display: none !important;
-	}
-	.footer_col
-	{
-		margin-bottom: 30px;
-	}
+	
 	.copyright
 	{
 		margin-top: 22px;
 	}
-	.footer_latest
-	{
-		margin-bottom: 10px;
-	}
+	
 }
 
 /************
@@ -277,61 +191,7 @@
 	{
 		font-size: 36px;
 	}
-	.find_item:first-child
-	{
-		width: 100%;
-		margin-bottom: 30px;
-	}
-	.find_item:nth-child(2)
-	{
-		width: 100%;
-		margin-bottom: 30px;
-	}
-	.find_item:nth-child(3),
-	.find_item:nth-child(4)
-	{
-		width: 100%;
-		margin-bottom: 30px;
-	}
-	.find_button
-	{
-		width: 138px;
-	}
-	.top_col:nth-last-child(2)
-	{
-		margin-bottom: 30px;
-	}
-	.popular_item
-	{
-		width: 100%;
-		margin-bottom: 26px;
-	}
-	.popular_item:nth-last-child(-n+4)
-	{
-		margin-bottom: 26px;
-	}
-	.popular_item:nth-last-child(-n+2)
-	{
-		margin-bottom: 26px;
-	}
-	.popular_item:last-child
-	{
-		margin-bottom: 0;
-	}
-	.special_content
-	{
-		width: 510px;
-	}
-	.newsletter_input
-	{
-		width: 100%;
-	}
-	.newsletter_button
-	{
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 15px;
-	}
+	
 }
 
 /************
@@ -425,85 +285,11 @@
 	{
 		font-size: 24px;
 	}
-	.find_title
-	{
-		font-size: 24px;
-	}
-	.find_input
-	{
-		height: 40px;
-		line-height: 36px;
-	}
-	.find_button
-	{
-		height: 40px;
-		line-height: 40px;
-		width: 120px;
-		padding: 0;
-	}
-	.find_input::-webkit-input-placeholder
-	{
-		font-size: 12px !important;
-	}
-	.find_input:-moz-placeholder
-	{
-		font-size: 12px !important;
-	}
-	.find_input::-moz-placeholder
-	{
-		font-size: 12px !important;
-	} 
-	.find_input:-ms-input-placeholder
-	{ 
-		font-size: 12px !important;
-	}
-	.find_input::input-placeholder
-	{
-		font-size: 12px !important;
-	}
-	.dropdown_item_select
-	{
-		font-size: 12px;
-	}
-	.find_item div
-	{
-		font-size: 12px;
-	}
-	.find_button
-	{
-		font-size: 14px;
-	}
+	
 	.section_title div
 	{
 		font-size: 12px;
 		margin-top: 12px;
-	}
-	.last_item_content
-	{
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-	.last_percent
-	{
-		font-size: 72px;
-	}
-	.last_subtitle
-	{
-		font-size: 12px;
-	}
-	.last_title
-	{
-		font-size: 24px;
-	}
-	.last_text
-	{
-		font-size: 12px;
-	}
-	.last_logo
-	{
-		top: -51px;
-	    left: -37px;
-	    width: 106px;
 	}
 	.button
 	{
@@ -515,56 +301,7 @@
 		font-size: 12px;
 		line-height: 40px;
 	}
-	.video_title
-	{
-		font-size: 24px;
-	}
-	.video_subtitle
-	{
-		font-size: 12px;
-	}
-	.special_content
-	{
-		width: 100%;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	.newsletter_title
-	{
-		font-size: 24px;
-	}
-	.newsletter_input
-	{
-		height: 40px;
-		line-height: 36px;
-	}
-	.newsletter_button
-	{
-		height: 40px;
-		line-height: 40px;
-		width: 140px;
-		padding: 0;
-	}
-	.newsletter_input::-webkit-input-placeholder
-	{
-		font-size: 12px !important;
-	}
-	.newsletter_input:-moz-placeholder
-	{
-		font-size: 12px !important;
-	}
-	.newsletter_input::-moz-placeholder
-	{
-		font-size: 12px !important;
-	} 
-	.newsletter_input:-ms-input-placeholder
-	{ 
-		font-size: 12px !important;
-	}
-	.newsletter_input::input-placeholder
-	{
-		font-size: 12px !important;
-	}
+	
 }
 
 /************
