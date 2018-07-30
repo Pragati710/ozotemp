@@ -889,95 +889,117 @@ label {
 /*********************************
 8. Sign Up
 *********************************/
-#signup_box {
+
+.signup{
+  padding:20px 10px;
+}
+
+.signup .signup-content{
+  max-width:700px;
+  margin:30px auto;
+  background:#fff;
+  border:1px solid #ddd;
+  border-radius:4px;
+  box-shadow:5px 5px 0px 1px rgba(0,0,0,0.05);
+}
+@media (max-width:767px){
+  .signup .signup-content{
+    max-width:400px;
+  }
+}
+.signup .signup-content .signup-padd{
+  padding:0px;
+}
+
+.signup .signup-content .signup-social{
+  padding:25px 30px;
+  border-left:1px solid #eee;
+  color:#999;
+}
+@media (max-width:767px){
+  .signup .signup-content .signup-social{
+    border:0px;
+    border-top:1px solid #eee;
+  }
+}
+
+.signup h2{
+  font-size:15px;
+  text-transform:uppercase;
+}
+.signup .signup-social ul li{
+  margin:10px 0px;
+}
+
+.signup .signup-social ul li a{
+  width:100%;
+  display:block;
+  color:#fff;
+  font-size:14px;
+  border-radius:3px;
+  padding:5px 10px;
+}
+
+.signup .signup-social ul li > a > i{
+  width:25px;
+  text-align:center;
+}
+
+.signup .signup-content .signup-form{
+  padding:15px 30px;
+}
+
+.signup .signup-form .signup-input{
   position: relative;
-  margin: 5% auto;
-  width: 600px;
-  height: 400px;
-  background: #FFF;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  margin:15px 0px;
+}
+.signup .signup-form .form-control{
+  height:40px;
 }
 
-.left {
-  position: absolute;
+.signup .signup-form .signup-icon{
+  right:4px;
   top: 0;
-  left: 0;
-  box-sizing: border-box;
-  padding: 40px;
-  width: 300px;
-  height: 400px;
-}
-
-
-
-.or {
+  font-size:14px;
+  width: 30px;
+  color: #ddd;
+  line-height:40px;
   position: absolute;
-  top: 180px;
-  left: 280px;
-  width: 40px;
-  height: 40px;
-  background: #DDD;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  line-height: 40px;
   text-align: center;
 }
-
-.right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  box-sizing: border-box;
-  padding: 40px;
-  width: 300px;
-  height: 400px;
-  background: url('https://goo.gl/YbktSj');
-  background-size: cover;
-  background-position: center;
-  border-radius: 0 2px 2px 0;
-}
-
-.right .loginwith {
-  display: block;
-  margin-bottom: 40px;
-  font-size: 28px;
-  color: #FFF;
-  text-align: center;
-}
-
-button.social-signin {
-  margin-bottom: 20px;
-  width: 220px;
-  height: 36px;
-  border: none;
-  border-radius: 2px;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  transition: 0.2s ease;
-  cursor: pointer;
-}
-
-button.social-signin:hover,
-button.social-signin:focus {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  transition: 0.2s ease;
-}
-
-button.social-signin:active {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  transition: 0.2s ease;
-}
-
-button.social-signin.facebook {
-  background: #32508E;
-}
-
-button.social-signin.twitter {
-  background: #55ACEE;
-}
-
-button.social-signin.google {
-  background: #DD4B39;
-}
+/*********************************
+#social media
+*********************************/
+.facebook {	background: #3280e7; }
+.facebook:hover { background: #134fa0; }
+.twitter { background: #32c8de;}
+.twitter:hover {	background: #188392;}
+.google-plus {background: #f96f4a;}
+.google-plus:hover {	background: #eb6440;}
+.linkedin  {	background: #729fda;}
+.linkedin:hover {background: #3069b6;}
+.pinterest {	background: #ed5441;}
+.pinterest:hover { background: #b72411;}
+.dropbox {background: #32c8de;}
+.dropbox:hover {	background: #188392;}
+.bitcoin {background: #f8a841;}
+.bitcoin:hover {	background: #cc7607;}
+.foursquare {background: #22bed4;}
+.foursquare:hover {background: #146f7c;}
+.flickr { background: #ff61e7;}
+.flickr:hover {	background: #fa00d4;}
+.github {background: #666666;}
+.github:hover {	background: #333333;}
+.instagram {	background: #d6917a;}
+.instagram:hover {background: #b35637;}
+.skype {background: #32c8de;}
+.skype:hover {background: #188392;}
+.tumblr {background: #84a1c8;}
+.tumblr:hover {background: #476d9f;}
+.vimeo {background: #32c8de;}
+.vimeo:hover {background: #188392;}
+.dribbble{background: #ff2edf;}
+.dribbble:hover {background: #c700a9;}
+.youtube {background: #ed5441;}
+.youtube:hover {	background: #b72411;}

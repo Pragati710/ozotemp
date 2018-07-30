@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html> 
+<title>Signup</title>
 <head>
-<title>Ozo Trips</title>
-<meta charset="utf-8">
+<meta charset='UTF-8'>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Ozo Trips project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+  
 <style>
-  *:focus {
+   *:focus {
   outline: none;
 }
 
@@ -20,86 +23,76 @@ body {
   color: #222;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;}
-
-
-h1 {
-  margin: 0 0 20px 0;
-  font-weight: 300;
-  font-size: 28px;
-}
-
-input[type="text"],
-input[type="password"] {
-  display: block;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: 4px;
-  width: 220px;
-  height: 32px;
-  border: none;
-  border-bottom: 1px solid #AAA;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  transition: 0.2s ease;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-  border-bottom: 1px solid #00a9d6;
-  color: #111;
-  transition: 0.2s ease;
-}
-
-input[type="submit"] {
-  margin-top: 28px;
-  width: 120px;
-  height: 32px;
-  background:#00a9d6;
-  border: none;
-  border-radius: 2px;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: 0.1s ease;
-  cursor: pointer;
-}
-
 </style>
 
 </head>
-
-
 <body>
-  <div id="signup_box" class="container">
-  <div class="col-md-10 " style="margin: auto;float:none">
-    <div class="col-md-6 left">
-    <h1>Sign up</h1>
-    
-    <input type="text" name="username" placeholder="Username" />
-    <input type="text" name="email" placeholder="E-mail" />
-    <input type="password" name="password" placeholder="Password" />
-    <input type="password" name="password2" placeholder="Retype password" />
-    
-    <input type="submit" name="signup_submit" value="Sign up" />
-      <ul class="list-inline">
-          <li>
-            <a class="signup__link" href="login.html">Already a member?</a>
-          </li>
-        </ul>
-  </div>
-  
-  <div class="col-md-6 right">
-    <span class="loginwith">Sign up with<br />social network</span>
-    
-    <button class="social-signin facebook">Log in with facebook</button>
-    <button class="social-signin twitter">Log in with Twitter</button>
-    <button class="social-signin google">Log in with Google+</button>
-  </div>
 
-  <div class="or">OR</div>
-</div>
-</div>
-</body>
-</html>
+<div class="signup">
+        
+        <!-- UI Content -->
+        <div class="signup-content">
+        
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 signup-padd">
+                <!-- Ui Form -->
+                <div class="signup-form">
+                  <!-- Heading -->
+                  <h2>Sign Up form</h2>
+                  <!-- Form -->
+                  <form>
+                    <!-- UI Input -->
+                    <div class="signup-input">
+                      <!-- Input Box -->
+                      <input type="text" name="uname" placeholder="Enter Your Name" class="form-control" />
+                      <label class="signup-icon"><i class="fa fa-user"></i></label>
+                    </div>
+                    <div class="signup-input">
+                      <input type="email" name="email" placeholder="Enter Your Email" class="form-control" />
+                      <label class="signup-icon"><i class="fa fa-envelope-o"></i></label>
+                    </div>
+                    <div class="signup-input">
+                       <input type="password" name="password" placeholder="Enter your Password" class="form-control" />
+   
+                      <label class="signup-icon"><i class="fa fa-lock"></i></label>
+                    </div>
+                    <div class="signup-input">
+                      <input type="password" name="password2" placeholder="Confirm password" class="form-control" />
+                      <label class="signup-icon"><i class="fa fa-lock"></i></label>
+                    </div>
+                    <input type="submit" name="submit" value="Sign Up" class="btn btn-danger btn-lg btn-block">
+                     <ul class="list-inline">
+                       <li>
+                     <a class="signup__link" href="login.html">Already a member?</a>
+                       </li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 signup-padd">
+                <!-- UI Hero -->
+                <div class="signup-social">
+                  <!-- Register -->
+                  <h2>Register using Social media</h2>
+                  
+                  <!-- Social media -->
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i> &nbsp; Connect with Facebook</a></li>
+                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> &nbsp; Connect with Twitter</a></li> 
+                    <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i> &nbsp; Connect with Google plus</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+<script src="vendor/bootstrap/js/popper.min.js"></script>
+<script src="vendor/owlcarousel/js/owl.carousel.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  </body>
+    </html>
