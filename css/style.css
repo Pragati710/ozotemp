@@ -14,9 +14,10 @@
 	4.2 Menu copyright
 5. Home
 6. Top Destinations
-7. Log In
-8. Sign up
-
+7. Services
+8. Sign Up
+9. Login
+10.Profile
 
 ******************************/
 
@@ -25,10 +26,6 @@
 ***********/
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,300');
-
-
 
 /*********************************
 2. Body and some general stuff
@@ -114,13 +111,10 @@ p a:hover::after
 }
 p::selection
 {
-	
+
 }
-h1{font-size: 48px;}
-h2{font-size: 40px;}
-h3{font-size: 24px;}
-h4{font-size: 18px;}
-h5{font-size: 14px;}
+
+
 h1, h2, h3, h4, h5, h6
 {
 	font-family: 'Montserrat', sans-serif;
@@ -128,18 +122,18 @@ h1, h2, h3, h4, h5, h6
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
 h6::selection
 {
-	
+
 }
 .form-control
 {
-	color: #db5246;
+	color: #636c72;
 }
 section
 {
@@ -244,23 +238,24 @@ section
 }
 .header.scrolled
 {
-	top: 15px;
+	top: 10px;
 }
 .header_container
 {
 	width: 100%;
-	height:65px;
+	height:45px;
 	background: #131a2f;
 	-webkit-transition: all 400ms ease;
 	-moz-transition: all 400ms ease;
 	-ms-transition: all 400ms ease;
 	-o-transition: all 400ms ease;
 	transition: all 400ms ease;
+	border-radius: 45px
 }
-.header.scrolled .header_container
+/*.header.scrolled .header_container
 {
 	height:65px;
-}
+}*/
 
 /*********************************
 3.1 Logo
@@ -349,7 +344,7 @@ section
 {
 	display: block;
 	position: absolute;
-	bottom: 28px;
+	bottom: 39px;
 	left: 0;
 	width: 100%;
 	height:3px;
@@ -359,12 +354,12 @@ section
 .main_nav_item a
 {
 	display: block;
-	font-size: 15px;
+	font-size: 13px;
 	font-weight: 400;
 	color: #FFFFFF;
 	line-height: 121px;
-	padding-left: 22px;
-	padding-right: 22px;
+	padding-left: 11px;
+	padding-right: 11px;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -392,8 +387,8 @@ section
 {
 	position: absolute;
 	top: 0;
-	right: 0;
-	width: 121px;
+	right: -1px;
+	width: 75px;
 	height: 100%;
 	background: #00a9d6;
 	cursor: pointer;
@@ -402,14 +397,16 @@ section
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
+	border-radius: 25px 25px
 }
 .icon-bar a {
     display: block; /* Make the links appear below each other instead of side-by-side */
     text-align: center; /* Center-align text */
-    padding: 13px; /* Add some padding */
+  /*  padding: 13px;  Add some padding */
     transition: all 0.3s ease; /* Add transition for hover effects */
     color: white; /* White text color */
-    font-size: 32px; /* Increased font-size */
+    font-size: 28px; /* Increased font-size */
+		padding: 3px
 }
 
 .icon-bar.active
@@ -446,7 +443,7 @@ section
 }
 .hamburger:hover i
 {
-	color: #00a9d6;
+	color: rgba(0,0,0,0.4);
 }
 /*********************************
 4. Menu
@@ -657,19 +654,22 @@ section
 *********************************/
 
  .carousel-item {
- 		height: 100vh;
-    	min-height: 300px;
+    	min-height: 240px;
     	background: no-repeat center center scroll;
 	   -webkit-background-size: cover;
        -moz-background-size: cover;
        -o-background-size: cover;
        background-size: cover;
 }
+.carousel{
+	box-shadow: 0px 10px rgba(0,0,0,0.5);
+	border-radius: 0px 0px 10px 10px
+}
 
 .home_content
 {
 	position: absolute;
-	top: 46%;
+	top: 27%;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
@@ -717,7 +717,6 @@ section
 }
 .section_title
 {
-	padding-top: 111px;
 	line-height: 1.1;
 }
 .section_title h2
@@ -768,112 +767,119 @@ section
 	color: #FFFFFF;
 	margin-top: 2px;
 }
-
-
-
 /*********************************
-7. Log In
+7 . Services
 *********************************/
+.service{
+	padding: 20px;
+	margin: auto;
+	float: none;
+}
+.service-row{
+	margin-bottom: 25px;
+	background: linear-gradient(141deg, rgba(15,184,173,0.3) 0%, rgba(31,200,219,0.2) 51%, rgba(44,181,232,0.5) 75%);
+}
+.service .btn-primary{
+	background-color: #00a9d6;
+	border-color: #00a9d6t
+}
+.form-desc{
+	padding: 15px;
+	background-color: rgba(14,159,209,0.6);
+	border-radius: 5px;
+	color: white
+}
+.service-list li {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 50%;
+	border: 1px solid #1e90ff;
+  background: lightblue;
+  margin: 0 1em;
+	cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
 
-
-.login__overlay {
+.service-list li::before{
+	content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.76);
+  top: 2.5em;
+  left: -4em;
+  width: 4em;
+  height: .2em;
+  background: dodgerblue;
+  z-index: -1;
+}
+.service-list li:first-child::before {
+  display: none;
+}
+.service-list .active {
+  background: dodgerblue;
+}
+.service-list .active .icon-name{
+  color: white
+}
+.service-list li:hover{
+	background: dodgerblue;
+}
+.service-list li:hover .icon-name{
+	color: white !important;
 }
 
-
-
-.login {
-  position: relative;
-  padding: 2.4rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background: url(../images/login.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
-  height: 28rem;
-  
+.service-list{
+	float: none;
+	margin: auto;
+	padding: 50px;
+	text-align: center;
+}
+.icon-name{
+	font-size: 13px;
+	position: relative;
+	top: -12px;
+	color: #1e90ff;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
 }
 
-
-.login__content,
-.login__links {
-  position: relative;
-  z-index: 2;
-}
-.login__content {
-  align-self: center;
-}
-
-.heading--primary {
-  font-size: 1.999rem;
-}
-
-.heading--secondary {
-  font-size: 1.414rem;
+.tooltip .tooltiptext {
+    visibility: hidden !important;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
 }
 
-.login__links {
-  align-self: flex-end;
-  width: 100%;
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
 }
 
-.login__links a {
-  font-size: 1rem;
-  color: #fff;
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
-.login__links a:focus, .login__links a:hover {
-  color: rgba(0,169,214, 0.5);
-}
-
-.login__form {
-  padding: 2.5rem;
-  background: #fafafa;
-    height: 28rem;
-}
-
-label {
-  font-size: .85rem;
-  text-transform: uppercase;
-  color: #ccc;
-}
-
-.form-control {
-  background-color: transparent;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  border-radius: 0;
-}
-.form-control:focus {
-  border-color:#00a9d6;
-}
-
-[type="text"] {
-  color: #111;
-}
-
-[type="password"] {
-  color: #111;
-}
-
-.btn--form {
-  padding: .5rem 2.5rem;
-  font-size: .95rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #fff;
-  background:#00a9d6;
-  border-radius: 2.1875rem;
-}
-.btn--form:focus, .btn--form:hover {
-  background: #0087ab;
+.material-icons{
+	font-size: 30px;
+	padding:8px;
+	color: black;
 }
 
 .signup__link {
@@ -895,7 +901,6 @@ label {
 }
 
 .signup .signup-content{
-  max-width:700px;
   margin:30px auto;
   background:#fff;
   border:1px solid #ddd;
@@ -907,13 +912,11 @@ label {
     max-width:400px;
   }
 }
-.signup .signup-content .signup-padd{
-  padding:0px;
-}
+
 
 .signup .signup-content .signup-social{
   padding:25px 30px;
-  border-left:1px solid #eee;
+
   color:#999;
 }
 @media (max-width:767px){
@@ -930,12 +933,13 @@ label {
 .signup .signup-social ul li{
   margin:10px 0px;
 }
-
+.signup-padd{
+	border-right:1px solid #eee;
+}
 .signup .signup-social ul li a{
   width:100%;
   display:block;
   color:#fff;
-  font-size:14px;
   border-radius:3px;
   padding:5px 10px;
 }
@@ -943,6 +947,18 @@ label {
 .signup .signup-social ul li > a > i{
   width:25px;
   text-align:center;
+}
+.login {
+  position: relative;
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url(../images/login.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
 }
 
 .signup .signup-content .signup-form{
@@ -969,8 +985,63 @@ label {
   text-align: center;
 }
 /*********************************
-#social media
+9. Login
 *********************************/
+
+
+.login__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+.login__content,
+.login__links {
+  position: relative;
+  z-index: 2;
+}
+.login__content {
+  align-self: center;
+	padding: 20px;
+}
+.heading--primary {
+  font-size: 1.3rem;
+	color: white
+}
+
+.heading--secondary {
+  font-size: 0.8rem;
+	color: white
+}
+
+.login__links {
+  align-self: flex-end;
+  width: 100%;
+}
+.login__links a {
+  font-size: 1rem;
+  color: #fff;
+}
+.login__links a:focus, .login__links a:hover {
+  color: rgba(0,169,214, 0.5);
+}
+.list-inline li {
+    display: inline;
+		padding: 10px;
+}
+
+/*********************************
+10. Profile
+*********************************/
+ 
+
+
+/*********************************
+Social Icons
+*********************************/
+
 .facebook {	background: #3280e7; }
 .facebook:hover { background: #134fa0; }
 .twitter { background: #32c8de;}
