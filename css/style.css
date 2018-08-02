@@ -19,6 +19,7 @@
 9. Login
 10.Profile
 11.Footer
+12.Tour Packages
 
 ******************************/
 
@@ -1101,8 +1102,32 @@ border-radius: 0;
 color: #ffffff;
 height: 52px;
 }
-
-
+/*********************************
+12.tour packages
+*********************************/
+.featured{
+    margin:50px 0px;
+}
+.featured .featured-item{
+	margin:25px auto;
+	max-width:350px;
+	border:2px solid #fff;
+	background:#fff;
+	box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+	border-radius:4px;
+}
+.featured .featured-item .featured_content{
+	padding:10px 15px 15px 15px;
+}
+.featured .featured-item .featured_content h3{
+	font-size:12px;
+	line-height:30px;
+	text-transform:uppercase;
+}
+.featured .featured-item .featured_content p{
+	color:#888;
+	margin-bottom:8px;
+}
 
 /*********************************
 Social Icons
