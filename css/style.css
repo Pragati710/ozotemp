@@ -1129,6 +1129,63 @@ height: 52px;
 	margin-bottom:8px;
 }
 
+/*********************************/
+/* Special Offers*/
+.spc{
+	margin:20px 0px;
+}
+.spc .spc-item{
+	max-width:260px;
+	margin:20px auto;
+	position:relative;
+	overflow:hidden;
+	border-radius:4px;
+	box-shadow:0px 0px 15px rgba(0,0,0,0.1);
+}
+.spc .spc-item .image-hover{
+	padding:10px 15px;
+	height:100%;
+	width:70%;
+	position:absolute;
+	top:0px;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.spc .spc-item .image-hover.spc-right{	
+	right:-190px;
+    background:rgba(0, 0, 0, 0.4);
+}
+.spc .spc-item:hover .image-hover.spc-right{
+	right:0px;
+	background:rgba(0, 0, 0, 0.4);
+}
+.spc .spc-item .image-hover.spc-left{	
+	left:-190px;
+	background:rgba(0, 0, 0, 0.4);
+}
+.spc .spc-item:hover .image-hover.spc-left{
+	left:0px;
+	background:rgba(0, 0, 0, 0.4);
+}
+.spc .spc-item .image-hover h3{
+	font-size:22px;
+	line-height:32px;
+	font-weight:500;
+	margin-bottom:5px;
+}
+.spc .spc-item .image-hover h3 a{
+	color:#00a9d6;
+}
+.spc .spc-item .image-hover p{
+	color:#fff;
+	font-size:13px;
+	line-height:23px;
+}
+
+
+
 /*********************************
 Social Icons
 *********************************/
