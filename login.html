@@ -172,7 +172,7 @@
 				            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
 				          </ul>
 				        </div>
-				        <div class="login__overlay"></div>
+				        <div class="login__overlay" id="loginMessage">&nbsp;</div>
               </div>
               <div class="col-md-6 col-sm-6 signup-padd">
 								<!-- Ui Form -->
@@ -180,17 +180,23 @@
 									<!-- Heading -->
 									<h2>Login Form</h2>
 									<!-- Form -->
-									<form>
+									<form method="POST" action="index.html" onsubmit="return Validate()" name="vform">
 										<!-- UI Input -->
 										<div class="signup-input">
 											<input type="email" name="email" placeholder="Email" class="form-control" />
 											<label class="signup-icon"><i class="fa fa-envelope-o"></i></label>
 										</div>
-										<div class="signup-input">
-											<input type="password" name="password" placeholder="Password" class="form-control" />
+                     <div id="email_error" class="val_error" style="color: red;"></div>
 
-											<label class="signup-icon"><i class="fa fa-lock"></i></label>
+
+
+										<div class="signup-input">
+											<input type="password" name="password" placeholder="Password" class="form-control"/>
+                      <label class="signup-icon"><i class="fa fa-lock"></i></label>
 										</div>
+                    <div id="password_error" class="val_error" style="color: red;"></div>
+
+
 										<input type="submit" name="submit" value="Log In" class="btn btn-danger btn-lg btn-block">
 										<ul class="list-inline">
 											<li>
@@ -210,6 +216,62 @@
 		<!-- Login Form End -->
 
 </div>
+<script>
+  //getting all input text object
+ 
+  var email = document.forms["vform"]["email"];
+  var password = document.forms["vform"]["password"];
+ 
+
+  //getting all error display object
+  
+  var email_error = document.getElementById("email_error");
+  var password_error = document.getElementById("password_error");
+  //setting all event listeners
+ 
+  email.addEventListener("blur", emailVerify, true);
+  password.addEventListener("blur", passwordVerify, true);
+
+  //validate function
+  function Validate(){
+
+//email validate
+if(email.value == ""){
+  email.style.border = "1px solid red";
+  email_error.textContent = "Email is required";
+  email.focus();
+  return false;
+}
+//password validate
+if(password.value == ""){
+  password.style.border = "1px solid red";
+  password_error.textContent = "Password is required";
+  paasword.focus();
+  return false;
+}
+ }
+
+//event handler functions
+
+function emailVerify(){
+  if(email.value != ""){
+    email.style.border = "1px solid #5e6e66";
+    email_error.innerHTML = "";
+    return true;
+  }
+}
+
+function passwordVerify(){
+  if(password.value != ""){
+    password.style.border = "1px solid #5e6e66";
+    password_error.innerHTML = "";
+    return true;
+  }
+}
+
+
+
+</script>
 
 
 <script src="js/jquery-3.3.1.min.js"></script>

@@ -164,26 +164,35 @@
                   <!-- Heading -->
                   <h2>Sign Up form</h2>
                   <!-- Form -->
-                  <form>
+                  <form method="POST" action="index.html" onsubmit="return Validate()" name="vform">
                     <!-- UI Input -->
                     <div class="signup-input">
                       <!-- Input Box -->
-                      <input type="text" name="uname" placeholder="Enter Your Name" class="form-control" />
+                      <input type="text" name="username" placeholder="Enter Your Name" class="form-control" />
                       <label class="signup-icon"><i class="fa fa-user"></i></label>
                     </div>
+                    <div id="name_error" class="val_error" style="color: red;"></div>
+
                     <div class="signup-input">
                       <input type="email" name="email" placeholder="Enter Your Email" class="form-control" />
                       <label class="signup-icon"><i class="fa fa-envelope-o"></i></label>
                     </div>
+                     <div id="email_error" class="val_error" style="color: red;"></div>
+
+
                     <div class="signup-input">
                        <input type="password" name="password" placeholder="Enter your Password" class="form-control" />
-
-                      <label class="signup-icon"><i class="fa fa-lock"></i></label>
+                       <label class="signup-icon"><i class="fa fa-lock"></i></label>
                     </div>
+                     
+
+
                     <div class="signup-input">
                       <input type="password" name="password2" placeholder="Confirm password" class="form-control" />
                       <label class="signup-icon"><i class="fa fa-lock"></i></label>
                     </div>
+                    <div id="password_error" class="val_error" style="color: red;"></div>
+
                     <input type="submit" name="submit" value="Sign Up" class="btn btn-danger btn-lg btn-block">
                      <ul class="list-inline">
                        <li>
@@ -217,7 +226,83 @@
 		<!-- SignUp Form end -->
 
 </div>
+<script>
+  //getting all input text object
+  var username = document.forms["vform"]["username"];
+  var email = document.forms["vform"]["email"];
+  var password = document.forms["vform"]["password"];
+  var password2 = document.forms["vform"]["password2"];
 
+  //getting all error display object
+  var name_error = document.getElementById("name_error");
+  var email_error = document.getElementById("email_error");
+  var password_error = document.getElementById("password_error");
+  //setting all event listeners
+  username.addEventListener("blur", nameVerify, true);
+  email.addEventListener("blur", emailVerify, true);
+  password.addEventListener("blur", passwordVerify, true);
+
+  //validate function
+  function Validate(){
+//username validate
+if(username.value == ""){
+  username.style.border = "1px solid red";
+  name_error.textContent = "Username is required";
+  username.focus();
+  return false;
+}
+//email validate
+if(email.value == ""){
+  email.style.border = "1px solid red";
+  email_error.textContent = "Email is required";
+  email.focus();
+  return false;
+}
+//password validate
+if(password.value == ""){
+  password.style.border = "1px solid red";
+  password_error.textContent = "Password is required";
+  paasword.focus();
+  return false;
+}
+//check if the two password donot match
+if(password.value != password2.value){
+  password.style.border = "1px solid red";
+  password2.style.border = "1px solid red";
+  password_error.textContent = "Two password doesn't match";
+  return false;
+
+}
+}
+
+//event handler functions
+function nameVerify(){
+  if(username.value != ""){
+    username.style.border = "1px solid #5e6e66";
+    name_error.innerHTML = "";
+    return true;
+  }
+}
+
+function emailVerify(){
+  if(email.value != ""){
+    email.style.border = "1px solid #5e6e66";
+    email_error.innerHTML = "";
+    return true;
+  }
+}
+
+function passwordVerify(){
+  if(password.value != ""){
+    password.style.border = "1px solid #5e6e66";
+    password_error.innerHTML = "";
+    return true;
+  }
+}
+
+
+
+</script>
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
